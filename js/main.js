@@ -46,7 +46,7 @@ function start(e) {
     cityInput.placeholder = "";
   }
   // console.log(e.target);
-  userCity = 'http://api.openweathermap.org/data/2.5/weather?q='+ cityInput.value +'&APPID=45d2fc7cf56de2feaced82feda756f44';
+  userCity = 'https://api.openweathermap.org/data/2.5/weather?q='+ cityInput.value +'&APPID=45d2fc7cf56de2feaced82feda756f44';
   var json = new XMLHttpRequest();
   json.addEventListener('readystatechange', function () {
     if (json.status === 200 && json.readyState === 4) {
