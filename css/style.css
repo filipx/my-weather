@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  font-family: 'Economica', sans-serif;
+}
+.image_front, .image_back {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background-size: cover;
+  transition: all 3s;
+}
+.heading {
+    padding: 10px 0 20px;
+    background-color: rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+}
+.heading h1 {
+  color: white;
+  font-size: 65px;
+  font-weight: 700;
+}
+.input_holder {
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 0;
+    border: 1px solid black;
+    height: 50px;
+    font-size: 18px;
+    box-shadow: 0 2px 2px 2px rgba(0,0,0,0.2);
+}
+.checkbox {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 15px;
+  color: #fff;
+}
+.checkbox label {
+    background-color: #888;
+    padding: 5px 22px 5px 40px;
+    transition: background-color .3s;
+}
+.checkbox label:hover {
+  background-color: #333;
+}
+#submit_btn {
+  border-radius: 0;
+  font-size: 23px;
+  line-height: 24px;
+}
+input#textCity:focus, input#textCity:active {
+    border: 1px solid white;
+    background-color: rgb(250, 255, 189);
+    box-shadow: none;
+}
+input#textCity {
+    background-color: transparent;
+    border-radius: 0;
+    border: 0 none;
+    height: 48px;
+    font-size: 19px;
+    color: black;
+}
+input#textCity::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #777;
+}
+input#textCity:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #777;
+   opacity: 1;
+}
+input#textCity::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #777;
+   opacity: 1;
+}
+input#textCity:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #777;
+}
+.table_wrapp {
+    padding: 30px;
+    background-color: rgba(0,0,0,0.8);
+    clear: both;
+    box-shadow: 0 2px 2px 2px rgba(0,0,0,0.2);
+}
+.table {
+  color: #fff;
+  font-size: 20px;
+}
+.table th, .table td {
+    font-weight: normal;
+    text-align: center;
+}
+.table > thead > tr > th {
+  border-bottom: 1px solid #555;
+  color: #bbb;
+}
+.table > thead > tr > td {
+  border: 0 none;
+}

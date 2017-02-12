@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Economica:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>My Weather</title>
+</head>
+<body>
+<div class="wrapp">
+  <div class="image_back"></div>
+  <div class="image_front"></div>
+  <div class="heading">
+    <h1 class="text-center">My Weather</h1>
+  </div>
+  <div class="container">
+    <div class="col-md-8 col-md-offset-2">
+      <form id="form_submit" method="get">
+        <div class="form-group input_holder">
+          <input type="text" class="form-control" id="textCity" placeholder="Enter any city...">
+
+          <div class="checkbox">
+            <label><input type="checkbox">Set default</label>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-sm-offset-3">
+          <div class="form-group">
+            <button id="submit_btn" type="button" class="btn btn-info btn-block btn-lg"><strong>Submit</strong></button>
+          </div>
+        </div>
+      </form>
+
+      <div class="table_wrapp">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>My City</th>
+              <th>Weather</th>
+              <th>Temperature</th>
+              <th>Max Temp</th>
+              <th>Wind</th>
+              <th>Humidity</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+  <script src="js/main.js" charset="utf-8"></script>
+  <script src="js/slides.js" charset="utf-8"></script>
+</body>
+</html>
